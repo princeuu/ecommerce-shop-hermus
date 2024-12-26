@@ -16,7 +16,8 @@ const HomeBanner = () => {
       <div className="relative z-10 px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-evenly h-full">
         <div>
           <h1 className="text-white text-4xl font-bold mb-4 animate-fadeIn opacity-0 [animation-delay:0s]">
-            Welcome to Hermus
+            Welcome to{" "}
+            <img src="/hermusLogoWhite.png" alt="hermus logo" className="h-16 w-auto" />
           </h1>
           <p
             className="text-white text-lg animate-fadeIn opacity-0
