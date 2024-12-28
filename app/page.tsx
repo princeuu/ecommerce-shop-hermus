@@ -11,6 +11,23 @@ export default function Home() {
         <div>
           <HomeBanner />
         </div>
+        <div className="mt-8 text-center">
+          <h2
+            className="
+              text-4xl 
+              font-bold 
+              text-black 
+              uppercase 
+              
+              
+              inline-block 
+              pb-2
+              mb-16
+            "
+          >
+            Brands
+          </h2>
+        </div>
         <div
           className="
         grid grid-cols-2 

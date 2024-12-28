@@ -4,40 +4,68 @@ export const products = [
   {
     id: "porsche",
     name: "Porsche 911",
-    description: "Short description",
+    description:
+      "The Porsche 911 is a timeless icon of automotive engineering, blending exhilarating performance, cutting-edge technology, and unmatched elegance. With its iconic design and precision handling, the 911 delivers a driving experience like no other, whether on the open road or the racetrack.",
     price: 154955,
-    brand: "porsche",
+    brand: "Porsche",
     category: "Car",
     inStock: true,
     images: [
       {
-        color: "White",
-        colorCode: "#FFFFFF",
+        name: "Porsche 911",
+        color: "Red",
+        colorCode: "#D50000",
         image: "/911.jpg",
+        description:
+          "The Porsche 911 is a timeless icon of automotive engineering, blending exhilarating performance, cutting-edge technology, and unmatched elegance.",
+        horsepower: 473,
+        zeroToSixty: 3.2,
+        topSpeed: 193,
       },
       {
-        color: "Gray",
-        colorCode: "#808080",
-        image: "/911.jpg",
+        name: "Porsche 718",
+        color: "Blue",
+        colorCode: "#00356B",
+        image: "/718.jpg",
+        description:
+          "The Porsche 718 is a tribute to the racing legends of the past, combining lightweight design and powerful engines for an exhilarating driving experience.",
+        horsepower: 394,
+        zeroToSixty: 4.3,
+        topSpeed: 182,
+      },
+      {
+        name: "Porsche Panamera",
+        color: "Black",
+        colorCode: "#000000",
+        image: "/panamera.jpg",
+        description:
+          "The Porsche Panamera redefines luxury and performance in a four-door coupe. With its cutting-edge technology and powerful engines, it offers a perfect blend of comfort and dynamic driving.",
+        horsepower: 620,
+        zeroToSixty: 3.1,
+        topSpeed: 196,
       },
     ],
-    reviews: [],
   },
   {
     id: "lamborghini",
     name: "Lamborghini Urus",
     description:
-      "PERFECT STROKE KEYS - Spherically-dished keys match the shape of your fingertips, offering satisfying feedback with every tap\nCOMFORT AND STABILITY - Type with confidence on a keyboard crafted for comfort, stability, and precision",
+      "The Lamborghini Urus combines luxury and sportiness in an SUV format, offering unmatched performance and cutting-edge design.",
     price: 275000,
-    brand: "lamborghini",
+    brand: "Lamborghini",
     category: "Car",
     inStock: true,
     images: [
       {
+        name: "Lamborghini Urus",
         color: "Black",
         colorCode: "#000000",
-        image:
-          "/urus.jpg",
+        image: "/urus.jpg",
+        description:
+          "The Lamborghini Urus combines luxury and sportiness in an SUV format, offering unmatched performance and cutting-edge design.",
+        horsepower: 641,
+        zeroToSixty: 3.6,
+        topSpeed: 190,
       },
     ],
   },
@@ -45,71 +73,93 @@ export const products = [
     id: "ferrari",
     name: "Ferrari LaFerrari",
     description:
-      'The product is refurbished, fully functional, and in excellent condition. Backed by the 90-day E~Shop Renewed Guarantee.\n- This pre-owned product has been professionally inspected, tested and cleaned by Amazon qualified vendors. It is not certified by Apple.\n- This product is in "Excellent condition". The screen and body show no signs of cosmetic damage visible from 12 inches away.\n- This product will have a battery that exceeds 80% capacity relative to new.\n- Accessories may not be original, but will be compatible and fully functional. Product may come in generic box.\n- Product will come with a SIM removal tool, a charger and a charging cable. Headphone and SIM card are not included.\n- This product is eligible for a replacement or refund within 90-day of receipt if it does not work as expected.\n- Refurbished phones are not guaranteed to be waterproof.',
+      "The Ferrari LaFerrari is a masterpiece of engineering, combining hybrid technology with breathtaking performance.",
     price: 3286875,
     brand: "Ferrari",
     category: "Car",
     inStock: true,
     images: [
       {
+        name: "Ferrari LaFerrari",
         color: "Black",
         colorCode: "#000000",
         image: "/LaFerrari.jpg",
+        description:
+          "The Ferrari LaFerrari is a masterpiece of engineering, combining hybrid technology with breathtaking performance.",
+        horsepower: 950,
+        zeroToSixty: 2.6,
+        topSpeed: 217,
       },
       {
-        color: "Blue",
-        colorCode: " #0000FF",
-        image: "https://m.media-amazon.com/images/I/713Om9vCHUL._AC_SX679_.jpg",
-      },
-      {
+        name: "Ferrari 812 Superfast",
         color: "Red",
         colorCode: "#FF0000",
         image:
           "https://m.media-amazon.com/images/I/61thdjmfHcL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        description:
+          "The Ferrari 812 Superfast is a testament to the brand's dedication to high-performance grand touring cars.",
+        horsepower: 789,
+        zeroToSixty: 2.8,
+        topSpeed: 211,
       },
     ],
   },
   {
     id: "mercedes-benz",
-    name: "Mercedes-AMG GT 63",
+    name: "Mercedes-Benz GT63",
     description:
-      "Cross computer control: Game changing capacity to navigate seamlessly on 3 computers, and copy paste text, images, and files from 1 to the other using Logitech flow\nDual connectivity: Use with upto 3 Windows or Mac computers via included Unifying receiver or Bluetooth Smart wireless technology. Gesture button- Yes",
+      "The Mercedes-Benz GT63 combines luxury and power in a four-door coupe, delivering thrilling performance with elegance.",
     price: 198110,
     brand: "Mercedes-Benz",
     category: "Car",
     inStock: true,
     images: [
       {
+        name: "Mercedes-Benz GT63",
         color: "Graphite",
-        colorCode: " #383838",
-        image:
-          "/gt63.jpg",
+        colorCode: "#383838",
+        image: "/gt63.jpg",
+        description:
+          "The Mercedes-Benz GT63 combines luxury and power in a four-door coupe, delivering thrilling performance with elegance.",
+        horsepower: 630,
+        zeroToSixty: 3.1,
+        topSpeed: 196,
       },
     ],
   },
   {
     id: "audi",
-    name: 'Audi R8',
+    name: "Audi R8",
     description:
-      'Bluetooth Call and Message Reminder: The smart watch is equipped with HD speaker, after connecting to your phone via Bluetooth, you can directly use the smartwatches to answer or make calls, read messages, store contacts, view call history. The smartwatch can set up more message notifications in "GloryFit" APP. You will never miss any calls and messages during meetings, workout and riding.',
+      "The Audi R8 is a high-performance sports car that combines everyday usability with exhilarating performance.",
     price: 171000,
     brand: "Audi",
     category: "Car",
     inStock: true,
     images: [
       {
+        name: "Audi R8",
         color: "Black",
         colorCode: "#000000",
-        image:
-          "/r8.jpg",
+        image: "/r8.jpg",
+        description:
+          "The Audi R8 is a high-performance sports car that combines everyday usability with exhilarating performance.",
+        horsepower: 562,
+        zeroToSixty: 3.4,
+        topSpeed: 201,
       },
       {
+        name: "Audi RS e-tron GT",
         color: "Silver",
         colorCode: "#C0C0C0",
         image:
           "https://m.media-amazon.com/images/I/71zbWSRMaYL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        description:
+          "The Audi RS e-tron GT is a fully electric performance sedan, showcasing the future of high-speed luxury.",
+        horsepower: 637,
+        zeroToSixty: 3.1,
+        topSpeed: 155,
       },
     ],
-    
   },
 ];
