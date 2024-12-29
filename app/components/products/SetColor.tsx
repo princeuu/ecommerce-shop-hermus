@@ -43,6 +43,7 @@ const SetColor: React.FC<SetColorProps> = ({
             </div>
           ))}
         </div>
+        
       </div>
     </div>
   );

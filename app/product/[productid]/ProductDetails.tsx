@@ -4,6 +4,7 @@ import Button from "@/app/components/Button";
 import ProductImage from "@/app/components/products/ProductImage";
 import SetColor from "@/app/components/products/SetColor";
 import { useCart } from "@/hooks/useCart";
+import { formatPrice } from "@/utils/formatPrice";
 import { useRouter } from "next/navigation";
 import React, { useState, useCallback, useEffect } from "react";
 import { MdCheckCircle } from "react-icons/md";
@@ -33,6 +34,7 @@ export type selectedImgType = {
   horsepower: number;
   zeroToSixty: number;
   topSpeed: number;
+  price: number;
 };
 
 const Horizontal = () => {
@@ -44,7 +46,6 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
   const [isProductInCart, setIsProductInCart] = useState(false);
 
   const [cartProduct, setCartProduct] = useState<CartProductType>({
-
     id: product.id,
     name: product.name,
     description: product.description,
@@ -54,9 +55,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
     horsepower: product.horsepower,
     zeroToSixty: product.zeroToSixty,
     topSpeed: product.topSpeed,
+    
   });
 
-  const router = useRouter()
+  const router = useRouter();
   console.log(cartProducts);
 
   useEffect(() => {
@@ -82,6 +84,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         horsepower: value.horsepower, // Update horsepower
         zeroToSixty: value.zeroToSixty, // Update 0-60 time
         topSpeed: value.topSpeed, // Update top speed
+        price: value.price,
       }));
     },
     [setCartProduct]
@@ -102,7 +105,14 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         handleColorSelect={handleColorSelect}
       />
       <div>
-        <h2 className="text-3xl font-medium text-slate-700">
+        <h2
+          className="
+        text-4xl 
+    font-bold 
+    text-gray-900 
+    tracking-wide 
+    drop-shadow-lg"
+        >
           {cartProduct.name}
         </h2>
 
@@ -144,22 +154,22 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           gap-1
           "
             >
-              <MdCheckCircle className="
+              <MdCheckCircle
+                className="
                 text-teal-400
                 size={20}"
               />
               <span>Product added to cart</span>
-              </p>
-              <div className="max-w-[500px]">
-                <Button
-                  label="View Cart"
-                  outline
-                  onClick={() => {
-                    router.push("/cart");
-                  }}
-                />
-              </div>
-            
+            </p>
+            <div className="max-w-[500px]">
+              <Button
+                label="View Cart"
+                outline
+                onClick={() => {
+                  router.push("/cart");
+                }}
+              />
+            </div>
           </>
         ) : (
           <>
@@ -169,6 +179,22 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
               handleColorSelect={handleColorSelect}
             />
             <Horizontal />
+            <div
+              className="
+              pb-6 
+              font-semibold 
+              text-xl 
+              text-gray-800 
+              shadow-md 
+              hover:shadow-lg 
+              transition 
+              px-4 
+              py-2 
+              rounded-md"
+            >
+              {formatPrice(cartProduct.price)}
+            </div>
+
             <div className="max-w-[500px]">
               <Button
                 label="Add to Cart"

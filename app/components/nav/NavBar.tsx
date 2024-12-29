@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "../Container";
+import CartCount from "./CartCount";
 
 const NavBar = () => {
   return (
@@ -35,7 +36,7 @@ const NavBar = () => {
                     flex items-center gap-8 md:gap-12
                     "
             >
-              <div>CartCount</div>
+              <CartCount/>
               <div>UserMenu</div>
             </div>
           </div>
