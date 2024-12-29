@@ -11,7 +11,7 @@ export default function Home() {
         <div>
           <HomeBanner />
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center" id="brands-section">
           <h2
             className="
               text-4xl 

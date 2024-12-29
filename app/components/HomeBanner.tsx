@@ -1,3 +1,6 @@
+'use client';
+
+
 const HomeBanner = () => {
   return (
     <div className=" mb-8  h-screen">
@@ -17,7 +20,11 @@ const HomeBanner = () => {
         <div>
           <h1 className="text-white text-4xl font-bold mb-4 animate-fadeIn opacity-0 [animation-delay:0s]">
             Welcome to{" "}
-            <img src="/hermusLogoWhite.png" alt="hermus logo" className="h-16 w-auto" />
+            <img
+              src="/hermusLogoWhite.png"
+              alt="hermus logo"
+              className="h-16 w-auto"
+            />
           </h1>
           <p
             className="text-white text-lg animate-fadeIn opacity-0
@@ -49,6 +56,11 @@ const HomeBanner = () => {
     opacity-0
     [animation-delay:2s]
     "
+            onClick={() => {
+              document
+                .getElementById("brands-section")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Explore Now
           </button>
