@@ -25,7 +25,7 @@ export default function Home() {
               mb-16
             "
           >
-            Brands
+            Vehicles
           </h2>
         </div>
         <div
