@@ -44,6 +44,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
   const [isProductInCart, setIsProductInCart] = useState(false);
 
   const [cartProduct, setCartProduct] = useState<CartProductType>({
+
     id: product.id,
     name: product.name,
     description: product.description,

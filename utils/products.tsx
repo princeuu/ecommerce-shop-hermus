@@ -10,10 +10,13 @@ export const products = [
     brand: "Porsche",
     category: "Car",
     inStock: true,
+    horsepower: 473,
+    zeroToSixty: 3.2,
+    topSpeed: 193,
     images: [
       {
         name: "Porsche 911",
-        color: "Red",
+        color: "911",
         colorCode: "#D50000",
         image: "/911.jpg",
         description:
@@ -24,7 +27,7 @@ export const products = [
       },
       {
         name: "Porsche 718",
-        color: "Blue",
+        color: "718",
         colorCode: "#00356B",
         image: "/718.jpg",
         description:
@@ -35,7 +38,7 @@ export const products = [
       },
       {
         name: "Porsche Panamera",
-        color: "Black",
+        color: "Panamera",
         colorCode: "#000000",
         image: "/panamera.jpg",
         description:
@@ -55,10 +58,13 @@ export const products = [
     brand: "Lamborghini",
     category: "Car",
     inStock: true,
+    horsepower: 641,
+    zeroToSixty: 3.6,
+    topSpeed: 190,
     images: [
       {
         name: "Lamborghini Urus",
-        color: "Black",
+        color: "Urus",
         colorCode: "#000000",
         image: "/urus.jpg",
         description:
@@ -78,10 +84,13 @@ export const products = [
     brand: "Ferrari",
     category: "Car",
     inStock: true,
+    horsepower: 950,
+    zeroToSixty: 2.6,
+    topSpeed: 217,
     images: [
       {
         name: "Ferrari LaFerrari",
-        color: "Black",
+        color: "LaFerrari",
         colorCode: "#000000",
         image: "/LaFerrari.jpg",
         description:
@@ -92,7 +101,7 @@ export const products = [
       },
       {
         name: "Ferrari 812 Superfast",
-        color: "Red",
+        color: "812 Superfast",
         colorCode: "#FF0000",
         image:
           "https://m.media-amazon.com/images/I/61thdjmfHcL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
@@ -113,10 +122,13 @@ export const products = [
     brand: "Mercedes-Benz",
     category: "Car",
     inStock: true,
+    horsepower: 630,
+    zeroToSixty: 3.1,
+    topSpeed: 196,
     images: [
       {
         name: "Mercedes-Benz GT63",
-        color: "Graphite",
+        color: "GT63",
         colorCode: "#383838",
         image: "/gt63.jpg",
         description:
@@ -136,10 +148,13 @@ export const products = [
     brand: "Audi",
     category: "Car",
     inStock: true,
+    horsepower: 562,
+    zeroToSixty: 3.4,
+    topSpeed: 201,
     images: [
       {
         name: "Audi R8",
-        color: "Black",
+        color: "R8",
         colorCode: "#000000",
         image: "/r8.jpg",
         description:
