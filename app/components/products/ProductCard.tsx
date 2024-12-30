@@ -10,13 +10,11 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
-
-    const router = useRouter();
+  const router = useRouter();
 
   return (
-    
     <div
-    onClick={() => router.push(`/product/${data.id}`)} 
+      onClick={() => router.push(`/product/${data.id}`)}
       className="
         col-span-1 
         cursor-pointer 
@@ -49,7 +47,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
             w-full 
             h-full
             object-cover
-            transition
+            transition-transform
+            duration-300
             group-hover:scale-110
           "
         />

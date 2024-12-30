@@ -185,12 +185,8 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
               font-semibold 
               text-xl 
               text-gray-800 
-              shadow-md 
-              hover:shadow-lg 
-              transition 
-              px-4 
-              py-2 
-              rounded-md"
+               
+              "
             >
               {formatPrice(cartProduct.price)}
             </div>
@@ -198,7 +194,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
             <div className="max-w-[500px]">
               <Button
                 label="Add to Cart"
-                onClick={() => handleAddProductToCart(cartProduct)}
+                onClick={() => {
+                  console.log("Button clicked"); // Debugging
+                  handleAddProductToCart(cartProduct);
+                }}
               />
             </div>
           </>

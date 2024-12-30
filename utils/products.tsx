@@ -1,4 +1,3 @@
-//I am changing the image links from firebase to amazon, firebase has issues with these direct links. Please remember to add the amazon link(that will show up at the error) instead of firebase at the cofig for it to work out.
 
 export const products = [
   {
@@ -20,7 +19,7 @@ export const products = [
         colorCode: "#D50000",
         image: "/911.jpg",
         description:
-          "The Porsche 911 is a timeless icon of automotive engineering, blending exhilarating performance, cutting-edge technology, and unmatched elegance.",
+          "The Porsche 911 is a timeless icon of automotive engineering, blending exhilarating performance, cutting-edge technology, and unmatched elegance. With its iconic design and precision handling, the 911 delivers a driving experience like no other, whether on the open road or the racetrack.",
         horsepower: 473,
         zeroToSixty: 3.2,
         topSpeed: 193,
@@ -32,7 +31,7 @@ export const products = [
         colorCode: "#00356B",
         image: "/718.jpg",
         description:
-          "The Porsche 718 is a tribute to the racing legends of the past, combining lightweight design and powerful engines for an exhilarating driving experience.",
+          "The Porsche 718 is a dynamic sports car that embodies precision, agility, and timeless design. With its mid-engine layout, turbocharged powertrain, and razor-sharp handling, it offers an exhilarating driving experience, perfect for both spirited drives and daily adventures.",
         horsepower: 394,
         zeroToSixty: 4.3,
         topSpeed: 182,
@@ -44,7 +43,7 @@ export const products = [
         colorCode: "#000000",
         image: "/panamera.jpg",
         description:
-          "The Porsche Panamera redefines luxury and performance in a four-door coupe. With its cutting-edge technology and powerful engines, it offers a perfect blend of comfort and dynamic driving.",
+          "The Porsche Panamera is a luxury sports sedan that seamlessly blends performance, elegance, and practicality. With powerful engine options, advanced technology, and a refined interior, it offers the thrill of a sports car with the comfort and versatility of a grand tourer.",
         horsepower: 620,
         zeroToSixty: 3.1,
         topSpeed: 196,
@@ -56,7 +55,7 @@ export const products = [
     id: "lamborghini",
     name: "Lamborghini Urus",
     description:
-      "The Lamborghini Urus combines luxury and sportiness in an SUV format, offering unmatched performance and cutting-edge design.",
+      "The Lamborghini Urus is a groundbreaking luxury SUV that blends supercar performance with everyday versatility. Powered by a twin-turbocharged V8 engine, it delivers thrilling speed, sharp handling, and a bold design, redefining the boundaries of power and practicality.",
     price: 275000,
     brand: "Lamborghini",
     category: "Car",
@@ -71,11 +70,35 @@ export const products = [
         colorCode: "#000000",
         image: "/urus.jpg",
         description:
-          "The Lamborghini Urus combines luxury and sportiness in an SUV format, offering unmatched performance and cutting-edge design.",
+          "The Lamborghini Urus is a groundbreaking luxury SUV that blends supercar performance with everyday versatility. Powered by a twin-turbocharged V8 engine, it delivers thrilling speed, sharp handling, and a bold design, redefining the boundaries of power and practicality.",
         horsepower: 641,
         zeroToSixty: 3.6,
         topSpeed: 190,
         price: 275000,
+      },
+      {
+        name: "Lamborghini Huracán",
+        color: "Huracán",
+        colorCode: "#000000",
+        image: "/huracan.jpg",
+        description:
+          "The Lamborghini Huracán is a sleek, high-performance supercar that combines cutting-edge technology with Italian craftsmanship. Powered by a roaring V10 engine, it delivers exhilarating speed, precision handling, and a striking design, making it a symbol of luxury and power on both the road and track.",
+        horsepower: 631,
+        zeroToSixty: 2.9,
+        topSpeed: 202,
+        price: 348773,
+      },
+      {
+        name: "Lamborghini Aventador",
+        color: "Aventador",
+        colorCode: "#000000",
+        image: "/aventador.jpg",
+        description:
+          "The Lamborghini Aventador is a legendary supercar that epitomizes power and sophistication. Featuring a ferocious V12 engine, bold angular design, and advanced aerodynamics, it offers unparalleled performance and luxury, making every drive a thrilling experience.",
+        horsepower: 769,
+        zeroToSixty: 2.8,
+        topSpeed: 217,
+        price: 550542,
       },
     ],
   },
@@ -83,7 +106,7 @@ export const products = [
     id: "ferrari",
     name: "Ferrari LaFerrari",
     description:
-      "The Ferrari LaFerrari is a masterpiece of engineering, combining hybrid technology with breathtaking performance.",
+      "The LaFerrari is Ferrari's flagship hybrid hypercar, combining a roaring V12 engine with advanced electric technology. With its groundbreaking design, extraordinary performance, and exclusivity, it represents the pinnacle of Ferrari engineering and innovation.",
     price: 3286875,
     brand: "Ferrari",
     category: "Car",
@@ -98,7 +121,7 @@ export const products = [
         colorCode: "#000000",
         image: "/LaFerrari.jpg",
         description:
-          "The Ferrari LaFerrari is a masterpiece of engineering, combining hybrid technology with breathtaking performance.",
+          "The LaFerrari is Ferrari's flagship hybrid hypercar, combining a roaring V12 engine with advanced electric technology. With its groundbreaking design, extraordinary performance, and exclusivity, it represents the pinnacle of Ferrari engineering and innovation.",
         horsepower: 950,
         zeroToSixty: 2.6,
         topSpeed: 217,
@@ -108,14 +131,25 @@ export const products = [
         name: "Ferrari 812 Superfast",
         color: "812 Superfast",
         colorCode: "#FF0000",
-        image:
-          "https://m.media-amazon.com/images/I/61thdjmfHcL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        image: "/812.jpg",
         description:
-          "The Ferrari 812 Superfast is a testament to the brand's dedication to high-performance grand touring cars.",
+          "The Ferrari 812 Superfast is a front-engine V12 masterpiece, delivering breathtaking performance and timeless elegance. With its striking design, exceptional handling, and roaring 789 hp, it embodies Ferrari's commitment to luxury and speed.",
         horsepower: 789,
         zeroToSixty: 2.8,
         topSpeed: 354,
         price: 400000,
+      },
+      {
+        name: "Ferrari F80",
+        color: "F80",
+        colorCode: "#FF0000",
+        image: "/f80.jpg",
+        description:
+          "The Ferrari F80 is a futuristic hypercar concept that pushes the boundaries of design and performance. Featuring a hybrid powertrain with a twin-turbo V8 engine and advanced aerodynamics, it envisions a thrilling blend of speed, innovation, and Ferrari's iconic styling for the next generation of supercars.",
+        horsepower: 1200,
+        zeroToSixty: 2.2,
+        topSpeed: 310,
+        price: 3925000,
       },
     ],
   },
@@ -123,7 +157,7 @@ export const products = [
     id: "mercedes-benz",
     name: "Mercedes-Benz GT63",
     description:
-      "The Mercedes-Benz GT63 combines luxury and power in a four-door coupe, delivering thrilling performance with elegance.",
+      "The Mercedes-AMG GT63 is a luxury performance sedan that combines breathtaking speed with refined comfort. Powered by a handcrafted V8 engine and equipped with advanced aerodynamics, cutting-edge technology, and a striking design, it delivers exhilarating performance while maintaining everyday practicality.",
     price: 198110,
     brand: "Mercedes-Benz",
     category: "Car",
@@ -138,11 +172,35 @@ export const products = [
         colorCode: "#383838",
         image: "/gt63.jpg",
         description:
-          "The Mercedes-Benz GT63 combines luxury and power in a four-door coupe, delivering thrilling performance with elegance.",
+          "The Mercedes-AMG GT63 is a luxury performance sedan that combines breathtaking speed with refined comfort. Powered by a handcrafted V8 engine and equipped with advanced aerodynamics, cutting-edge technology, and a striking design, it delivers exhilarating performance while maintaining everyday practicality.",
         horsepower: 630,
         zeroToSixty: 3.1,
         topSpeed: 196,
         price: 198110,
+      },
+      {
+        name: "Mercedes-Benz SL Roadster",
+        color: "SL Roadster",
+        colorCode: "#383838",
+        image: "/slroadster.jpg",
+        description:
+          "The Mercedes SL Roadster is a sleek and sophisticated convertible that blends dynamic performance with timeless elegance. Featuring a retractable roof, a luxurious interior, and powerful engine options, it delivers an exhilarating open-air driving experience for true automotive enthusiasts.",
+        horsepower: 577,
+        zeroToSixty: 3.5,
+        topSpeed: 196,
+        price: 111800,
+      },
+      {
+        name: "Mercedes-Benz G-Class",
+        color: "G-Class",
+        colorCode: "#383838",
+        image: "/G-Class.jpg",
+        description:
+          "The Mercedes G-Class, or G-Wagon, is a luxury SUV that combines rugged off-road capability with premium comfort and advanced technology. With its iconic boxy design, powerful engine options, and handcrafted interior, the G-Class is a symbol of prestige and adventure.",
+        horsepower: 577,
+        zeroToSixty: 4.5,
+        topSpeed: 149,
+        price: 148250,
       },
     ],
   },
@@ -150,7 +208,7 @@ export const products = [
     id: "audi",
     name: "Audi R8",
     description:
-      "The Audi R8 is a high-performance sports car that combines everyday usability with exhilarating performance.",
+      "The Audi R8 is a breathtaking supercar that delivers thrilling performance and everyday usability. Powered by a naturally aspirated V10 engine, it features a striking design, advanced Quattro all-wheel drive, and precision handling, making it a true icon of speed and style.",
     price: 171000,
     brand: "Audi",
     category: "Car",
@@ -165,7 +223,7 @@ export const products = [
         colorCode: "#000000",
         image: "/r8.jpg",
         description:
-          "The Audi R8 is a high-performance sports car that combines everyday usability with exhilarating performance.",
+          "The Audi R8 is a breathtaking supercar that delivers thrilling performance and everyday usability. Powered by a naturally aspirated V10 engine, it features a striking design, advanced Quattro all-wheel drive, and precision handling, making it a true icon of speed and style.",
         horsepower: 562,
         zeroToSixty: 3.4,
         topSpeed: 201,
@@ -175,10 +233,9 @@ export const products = [
         name: "Audi RS e-tron GT",
         color: "RS e-tron GT",
         colorCode: "#C0C0C0",
-        image:
-          "https://m.media-amazon.com/images/I/71zbWSRMaYL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        image: "/etron.jpg",
         description:
-          "The Audi RS e-tron GT is a fully electric performance sedan, showcasing the future of high-speed luxury.",
+          "The Audi RS e-tron GT is a high-performance electric grand tourer that redefines luxury and speed. With dual electric motors delivering exhilarating acceleration, a sleek aerodynamic design, and advanced technology, it offers a thrilling and sustainable driving experience, blending power with elegance.",
         horsepower: 637,
         zeroToSixty: 3.1,
         topSpeed: 155,
