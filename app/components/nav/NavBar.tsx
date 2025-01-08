@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Container from "../Container";
 import CartCount from "./CartCount";
+import UserMenu from "./UserMenu";
 
 const NavBar = () => {
   return (
@@ -37,7 +38,7 @@ const NavBar = () => {
                     "
             >
               <CartCount/>
-              <div>UserMenu</div>
+              <UserMenu/>
             </div>
           </div>
         </Container>
