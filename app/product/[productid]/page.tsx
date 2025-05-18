@@ -3,11 +3,13 @@ import ProductDetails from "./ProductDetails";
 import { products } from "@/utils/products";
 import Link from "next/link";
 
-interface IParams {
-  productid: string;
-}
+type PageProps = {
+  params: {
+    productid: string;
+  };
+};
 
-const Product = ({ params }: { params: IParams }) => {
+const Product = ({ params }: PageProps) => {
   const product = products.find((item) => item.id === params.productid);
 
   if (!product) {
