@@ -12,7 +12,7 @@ const Product = async ({ params }: { params: IPrams }) => {
   
 
   console.log("Resolved Params:", params);
-  const product = products.find((item) => item.id === params.productid);
+  const product = products.find((item) => item.id === params.productId);
 
   console.log("Product Found:", product);
 
