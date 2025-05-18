@@ -4,15 +4,15 @@ import ProductDetails from "./ProductDetails";
 import { products } from "@/utils/products";
 import Link from "next/link";
 
-interface IPrams {
-  productId?: string;
+interface IParams {
+  productid: string;
 }
 
 const Product = async ({ params }: { params: IPrams }) => {
   
 
   console.log("Resolved Params:", params);
-  const product = products.find((item) => item.id === params.productId);
+  const product = products.find((item) => item.id === params.productid);
 
   console.log("Product Found:", product);
 
