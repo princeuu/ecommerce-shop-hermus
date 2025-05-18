@@ -1,15 +1,16 @@
+import { notFound } from "next/navigation";
 import Container from "@/app/components/Container";
 import ProductDetails from "./ProductDetails";
 import { products } from "@/utils/products";
 import Link from "next/link";
 
-type PageProps = {
+interface PageParams {
   params: {
     productid: string;
   };
-};
+}
 
-const Product = ({ params }: PageProps) => {
+const ProductPage = async ({ params }: PageParams) => {
   const product = products.find((item) => item.id === params.productid);
 
   if (!product) {
@@ -41,4 +42,4 @@ const Product = ({ params }: PageProps) => {
   );
 };
 
-export default Product;
+export default ProductPage;
