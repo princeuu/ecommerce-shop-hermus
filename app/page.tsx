@@ -38,7 +38,7 @@ export default function Home() {
         gap-8"
         >
           {products.map((product: any) => {
-            return <ProductCard data={product} />;
+            return <ProductCard key={product.id} data={product} />;
           })}
         </div>
       </Container>

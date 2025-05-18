@@ -15,7 +15,7 @@ const LoginForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<FieldValues>({
-    defualtValues: {
+    defaultValues: {
       
       email: "",
       password: "",
@@ -38,7 +38,7 @@ const LoginForm = () => {
         onClick={() => {}}
       />
       <hr className="bg-slate-300 w-full h-px" />
-      
+
       <Input
         id="email"
         label="Email"
@@ -61,7 +61,7 @@ const LoginForm = () => {
         onClick={handleSubmit(onSubmit)}
       />
       <p className="text-sm">
-        Don't have an account?{" "}
+        {"Don't"} have an account?{" "}
         <Link className="underline" href="/register">
           Sign Up
         </Link>
