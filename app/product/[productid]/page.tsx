@@ -4,13 +4,15 @@ import ProductDetails from "./ProductDetails";
 import { products } from "@/utils/products";
 import Link from "next/link";
 
-interface PageParams {
+// DO NOT name this type PageProps to avoid conflict!
+type Params = {
   params: {
     productid: string;
   };
-}
+};
 
-const ProductPage = async ({ params }: PageParams) => {
+// MUST be async in the App Router
+const ProductPage = async ({ params }: Params) => {
   const product = products.find((item) => item.id === params.productid);
 
   if (!product) {
