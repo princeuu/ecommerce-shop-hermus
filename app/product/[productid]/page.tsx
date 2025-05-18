@@ -1,11 +1,16 @@
-import { notFound } from "next/navigation";
 import Container from "@/app/components/Container";
 import ProductDetails from "./ProductDetails";
 import { products } from "@/utils/products";
 import Link from "next/link";
 
-const ProductPage = async ({ params }: { params: { productid: string } }) => {
-  const product = products.find((item) => item.id === params.productid);
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ productid: string }>;
+}) {
+  const { productid } = await params;
+
+  const product = products.find((item) => item.id === productid);
 
   if (!product) {
     return (
@@ -34,6 +39,4 @@ const ProductPage = async ({ params }: { params: { productid: string } }) => {
       </Container>
     </div>
   );
-};
-
-export default ProductPage;
+}
