@@ -19,7 +19,7 @@ const RegisterForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<FieldValues>({
-    defualtValues: {
+    defaultValues: {
       name: "",
       email: "",
       password: "",
