@@ -29,7 +29,7 @@ const NavBar = () => {
                 "
           >
             <Link href="/">
-              <img src="/logo.png" alt="hermus logo" className="h-12 w-auto" />
+              <img src="/Logo.png" alt="hermus logo" className="h-12 w-auto" />
             </Link>
             <div>Search</div>
             <div
