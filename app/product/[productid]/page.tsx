@@ -9,8 +9,7 @@ interface IPrams {
 }
 
 const Product = async ({ params }: { params: IPrams }) => {
-  const resolvedParams = await Promise.resolve(params);
-  console.log("Resolved Params:", resolvedParams);
+  
 
   console.log("Resolved Params:", params);
   const product = products.find((item) => item.id === params.productid);
