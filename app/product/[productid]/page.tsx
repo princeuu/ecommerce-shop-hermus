@@ -2,6 +2,7 @@ import Container from "@/app/components/Container";
 import ProductDetails from "./ProductDetails";
 
 import { products } from "@/utils/products";
+import Link from "next/link";
 
 interface IPrams {
   productId?: string;
@@ -25,11 +26,11 @@ const Product = async ({ params }: { params: IPrams }) => {
               Product Not Found
             </h1>
             <p className="text-lg mt-4">
-              We couldn't find the product you're looking for.
+              {"We couldn't find the product you're looking for."}
             </p>
-            <a href="/" className="text-blue-500 underline mt-6">
+            <Link href="/" className="text-blue-500 underline mt-6">
               Go back to Home
-            </a>
+            </Link>
           </div>
         </Container>
       </div>
