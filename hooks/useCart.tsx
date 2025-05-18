@@ -80,7 +80,7 @@ console.log("amount", cartTotalAmount)
   }, []);
 
   const handleRemoveProductFromCart = useCallback(
-    (product: CartContextType) => {
+    (product: CartProductType) => {
       if (cartProducts) {
         const filteredProducts = cartProducts.filter((item) => {
           return item.id !== product.id;
