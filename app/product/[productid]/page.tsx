@@ -8,7 +8,7 @@ interface IParams {
   productid: string;
 }
 
-const Product = async ({ params }: { params: IPrams }) => {
+const Product = async ({ params }: { params: IParams }) => {
   
 
   console.log("Resolved Params:", params);
